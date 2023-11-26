@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/website_logo.png" />
+    <title>Музей</title>
+</head>
+
+<body onload="hideLoad();">
+    <!-------------------------------------------------->
+    <!--------------------- HEADER --------------------->
+    <!-------------------------------------------------->
+    <header>
+        <img src="images/website_logo.png" alt="Логотип Музея" id="website-logo" />
+        <!-- <span class="razr">Разработчики: Иван Иванов Иванович, Петр Николаев Николаевич</span>  -->
+        <div class="header-button">
+            <div class="header-button__glossary" onclick="openGlossary()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z">
+                    </path>
+                    <path
+                        d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z">
+                    </path>
+                    <path
+                        d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z">
+                    </path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 16 16"
+                    class="opacity">
+                    <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z">
+                    </path>
+                    <path
+                        d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z">
+                    </path>
+                    <path
+                        d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z">
+                    </path>
+                </svg>
+                <span>Термины</span>
+            </div>
+            <div class="header-button__switch-theme" onclick="darkTheme()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 16 16">
+                    <path
+                        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
+                    </path>
+                    <path
+                        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z">
+                    </path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 16 16"
+                    class="opacity">
+                    <path
+                        d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z">
+                    </path>
+                </svg>
+                <span>Включить тёмную тему</span>
+            </div>
+        </div>
+    </header>
+
+    <!-------------------------------------------------->
+    <!-------------------- Glossary -------------------->
+    <!-------------------------------------------------->
+    <div class="glossary show">
+        <span>Халцедон - полупрозрачная разновидность кварца различных цветовых
+            оттенков.</span>
+        <span>Шпат - минерал, обладающий способностью раскалываться при ударе по
+            нескольким направлениям спайности.</span>
+        <ul>
+            <li>Из группы силикатов: полевой шпат.</li>
+            <li>
+                Из группы карбонатов: известковый шпат (или кальцит), исландский шпат
+                (разновидность кальцита).
+            </li>
+            <li>Флюорит - плавиковый шпат</li>
+        </ul>
+        <span>Сингония - в кристаллографии группа видов симметрии, в которую входят
+            кристаллы, имеющие сходные элементы симметрии. <br />Пример:</span>
+        <ul>
+            <li>
+                <span>Триклинная сингония</span>
+                <img src="images/syngony_triclinic.jpg" alt="Триклинная сингония" />
+            </li>
+            <li>
+                <span>Моноклинная сингония</span>
+                <img src="images/syngony_monoclinic.jpg" alt="Моноклинная сингония" />
+            </li>
+        </ul>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <!-------------------------------------------------->
+    <!---------------------- MAIN ---------------------->
+    <!-------------------------------------------------->
+    <main>
+        <div class="add-buttons" id="mainblock">
+            <!-------------------------------------------------->
+            <!------------------- Известняки ------------------->
+            <!-------------------------------------------------->
+            <div class="icons">
+                <section>
+                    <div class="icons__headlines">
+                        <h1 class="icons__title">Известняки</h1>
+                        <div class="burger burger-active" onclick="burgerToggle(this)">
+                            <span class="burger__line burger__line-first"></span>
+                            <span class="burger__line burger__line-second"></span>
+                            <span class="burger__square"></span>
+                            <span class="burger__line burger__line-third"></span>
+                            <span class="burger__line burger__line-fourth"></span>
+                        </div>
+                    </div>
+                    <div class="burger-target">
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Известняк плотный</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_izvPlot.png" alt="Известняк плотный" class="icons__mineral"
+                                    onclick="hide('mainblock', 'izvPlot')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Известняк ракушечник</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_izvPlotRakysh.png" alt="Известняк ракушечник" class="icons__mineral"
+                                    onclick="hide('mainblock', 'izvRakysh')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Мел</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_mel.png" alt="Мел" class="icons__mineral"
+                                    onclick="hide('mainblock', 'mel')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Мрамор белый</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_mramor.png" alt="Мрамор белый" class="icons__mineral"
+                                    onclick="hide('mainblock', 'mramor')" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-------------------------------------------------->
+            <!------------------- Пол.Ископ. ------------------->
+            <!-------------------------------------------------->
+            <div class="icons">
+                <section>
+                    <div class="icons__headlines">
+                        <h1 class="icons__title">Полезные испопаемые</h1>
+                        <div class="burger burger-active" onclick="burgerToggle(this)">
+                            <span class="burger__line burger__line-first"></span>
+                            <span class="burger__line burger__line-second"></span>
+                            <span class="burger__square"></span>
+                            <span class="burger__line burger__line-third"></span>
+                            <span class="burger__line burger__line-fourth"></span>
+                        </div>
+                    </div>
+                    <div class="burger-target">
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Гранит</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_granit.png" alt="Гранит" class="icons__mineral"
+                                    onclick="hide('mainblock', 'granit')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Полевой шпат</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_polevoyShpat.png" alt="Полевой шпат" class="icons__mineral"
+                                    onclick="hide('mainblock', 'shpat')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Кварц</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_kvarc.png" alt="Кварц" class="icons__mineral"
+                                    onclick="hide('mainblock', 'cvarc')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Слюда белая</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_slydaWhite.png" alt="Слюда белая" class="icons__mineral"
+                                    onclick="hide('mainblock', 'slydawhite')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Слюда черная</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_slydablack.png" alt="Слюда черная" class="icons__mineral"
+                                    onclick="hide('mainblock', 'slydablack')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Песчаник</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_peschanik.png" alt="Песчаник" class="icons__mineral"
+                                    onclick="hide('mainblock', 'pesok')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Мел</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_mel.png" alt="Мел" class="icons__mineral"
+                                    onclick="hide('mainblock', 'mel')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Мрамор</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_mramor.png" alt="Мрамор" class="icons__mineral"
+                                    onclick="hide('mainblock', 'mramor')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Соль каменная</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_solKamennaya.png" alt="Соль каменная" class="icons__mineral"
+                                    onclick="hide('mainblock', 'kamsol')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Торф</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_torf.png" alt="Торф" class="icons__mineral"
+                                    onclick="hide('mainblock', 'torf')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Каменный уголь</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_kamenYgol.png" alt="Каменный уголь" class="icons__mineral"
+                                    onclick="hide('mainblock', 'kamygol')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Бурый уголь</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_byrblyYgol.png" alt="Бурый уголь" class="icons__mineral"
+                                    onclick="hide('mainblock', 'ygol')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Антрацит</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_Antracit.png" alt="Антрацит" class="icons__mineral"
+                                    onclick="hide('mainblock', 'antracit')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Магнитный железняк</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_magnitJeleznyk.png" alt="Магнитный железняк"
+                                    class="icons__mineral" onclick="hide('mainblock', 'magnjeleznyk')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Красный железняк</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_redJeleznyk.png" alt="Красный железняк" class="icons__mineral"
+                                    onclick="hide('mainblock', 'redjeleznyk')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Бурый железняк</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_ByrbluJeleznyk.png" alt="Бурый железняк" class="icons__mineral"
+                                    onclick="hide('mainblock', 'byrjeleznyk')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Медный колчедан</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_MednbuyKolhedan.png" alt="Медный колчедан" class="icons__mineral"
+                                    onclick="hide('mainblock', 'kolhedan')" />
+                            </div>
+                        </div>
+                        <div class="icons__width-limit">
+                            <h2 class="icons__title">Боксит</h2>
+                            <div class="imgWrapper">
+                                <img src="images/icon_boksit.png" alt="Боксит" class="icons__mineral"
+                                    onclick="hide('mainblock', 'boksit')" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-------------------------------------------------->
+        <!-------------------- BlockHide ------------------->
+        <!-------------------------------------------------->
+
+        <div id="izvPlot" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('izvPlot', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Плотные известняки имеют в своем составе как обломки панцирей и
+                    раковин морских животных, так и мелкие зерна известкового шпата.
+                    Этот вид наиболее часто встречается в природе в виде толстых слоев
+                    породы. Основа известняка – карбонат кальция (50-95%). Остальное –
+                    это кварц, доломит, полевой шпат и другие минералы (5-50%). Именно
+                    из-за наличия в составе минералов камень имеет различные оттенки.
+                    Цвета плотного известняка – преимущественно желтый, бурый и серый.
+                    Плотные известняки используются при облицовке стен. Белокаменные
+                    церкви сложены именно из этой породы.
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-CaCO3</li>
+                        <li>Температура разложения-2442 ± 1 ℉ и 1517 ± 1 ℉</li>
+                        <li>Средняя плотность-2800 кг/м³</li>
+                        <li>Твердость по шкале Мооса-3</li>
+                        <li>Предел прочности при сжатии- 50-150 МПа</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_izvPlot.png" alt="Известняк плотный" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="izvRakysh" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('izvRakysh', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Ракушечник - это разновидность известняка - пористой осадочной органогенной горной породы средней твердости, сформовавшейся из останков морских организмов, дробленых или целых раковин, панцирей, моллюсков. Чаще всего ракушечник применяется в строительных работах: постройка декоративных садовых элементов, сооружение заборов и дачных построек, украшение фасадов стен и прочее.
+
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-СаСО3</li>
+                        <li>Температура разложения-2442 ± 1 ℉ и 1517 ± 1 ℉</li>
+                        <li>Средняя плотность-2600 кг/м³ (зависит от содержания примесей)</li>
+                        <li>Твердость по шкале Мооса-3</li>
+                        <li>Предел прочности при сжатии-10МПа</li>
+                        <li>Радиоактивность-88,2 Бк/кг</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_izvPlotRakysh.png" alt="Известняк ракушечник" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+
+        <div id="granit" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('granit', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Гранит-это магматическая плутоническая порода, на 60-65% состоящая из полевого шпата и на 25-35% - из кварца. Именно кварц образует в камне неправильные изометричные зерна, сросшиеся с зернами полевого шпата. В граните также присутствует небольшое количество слюды (биотита или мусковита). Химический состав минерала характеризуется повышенным содержанием щелочей и небольшим процентным составом железа и магния.
+Цвет гранита варьируется от белого и розового до практически красного, и зависит от пропорций минералов в составе. Например, если в камне присутствует большое количество калиевого полевого шпата, камень имеет розовый оттенок, если при этом присутствует оксид железа, материал приобретает насыщенный красный цвет. Наряду с мрамором, гранит – один из самых востребованных натуральных материалов в строительной и отделочной сфере. Он используется в строительстве, облицовочных работах, засыпке дорог, производстве деталей интерьера.
+
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-SiO2</li>
+                        <li>Температура плавления-до 700°С</li>
+                        <li>Плотность-2600кг/м³</li>
+                        <li>Твердость по шкале Мооса - 5-7</li>
+                        <li>Предел прочности при сжатии-300МПа</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_granit.png" alt="Гранит" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="shpat" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('shpat', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Полевой шпат-широкораспространённый(почти половина массы земной коры), в частности —
+                    породообразующий минерал из класса силикатов. Полевым он именуется по причине частого его
+                    обнаружения на шведских пашнях. Если взглянуть на разные образцы полевого шпата, то можно заметить,
+                    что этот камень бывает разнообразных цветов. Однако на самом деле сам шпат почти бесцветный, а
+                    окраску ему придают посторонние примеси. Шпат твердый, но хрупкий. Это означает, что если взязять
+                    его в руки - просто смять его не получится, а вот если ударить обо что-то - шпат может расколоться.
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-КAlSi3O8</li>
+                        <li>Температура плавления-1160°С</li>
+                        <li>Средняя плотность-2750кг/м³</li>
+                        <li>Твердость по шкале Мооса - 5-6.5</li>
+                        <li>Предел прочности при сжатии- 120-170 МПа</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_polevoyShpat.png" alt="Полевой шпат" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="cvarc" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('cvarc', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Кварц - наиболее часто встречающийся в природе минерал. Цвета кварца могут быть самыми
+                    разнообразными – от совершенно прозрачного бесцветного, до насыщенного красного, желтого, синего
+                    оттенка. Встречается кварц и черного цвета. Кристаллы кварца образуются при остывании раскаленной
+                    магмы, вырывающейся из толщи земли при извержениях и разломах земной коры. Залежи кварца могут
+                    представлять из себя как хаотично разбросанные кристаллы разных размеров, так и целые прослойки
+                    этого полупрозрачного минерала. Кварц используется в оптических приборах, в генераторах ультразвука,
+                    в телефонной и радиоаппаратуре, в электронных приборах.
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-SiO2</li>
+                        <li>Температура плавления-1700°С</li>
+                        <li>Средняя плотность-2600кг/м³</li>
+                        <li>Твердость по шкале Мооса - 7</li>
+                        <li>Предел прочности при сжатии- 2000 МПа</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_kvarc.png" alt="Кварц" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="slydawhite" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('slydawhite', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Слюда — один из наиболее распространённых породообразующих минералов интрузивных, метаморфических и
+                    осадочных горных пород, а также важное полезное ископаемое. некрепкий материал. Она имеет слоистую
+                    структуру, то есть кусок минерала состоит из множества тонких слоев, которые несложно разломать на
+                    кусочки без использования инструментов. Слои слюды достаточно ломкие, но могут слегка гнуться.
+                    Добывают этот минерал открытым или подземным способом. Слюда входит в состав пород, имеющих
+                    вулканическое происхождение. В наше время слюда применяется как электроизоляционный материал, а
+                    также в авиа- и радиотехнике.
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-AlSi3O10</li>
+                        <li>Температура плавления-1145°С-1400°С</li>
+                        <li>Плотность — 2770 кг/м³ (мусковит), 2200 кг/м³ (флогопит), 3300 кг/м³ (биотит)</li>
+                        <li>Твёрдость слюды по минералогической шкале - 2,5-3</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_slydaWhite.png" alt="Слюда белая" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="slydablack" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('slydablack', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Слюда — один из наиболее распространённых породообразующих минералов интрузивных, метаморфических и
+                    осадочных горных пород, а также важное полезное ископаемое. некрепкий материал. Она имеет слоистую
+                    структуру, то есть кусок минерала состоит из множества тонких слоев, которые несложно разломать на
+                    кусочки без использования инструментов. Слои слюды достаточно ломкие, но могут слегка гнуться.
+                    Добывают этот минерал открытым или подземным способом. Слюда входит в состав пород, имеющих
+                    вулканическое происхождение. В наше время слюда применяется как электроизоляционный материал, а
+                    также в авиа- и радиотехнике.
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-AlSi3O10</li>
+                        <li>Температура плавления-1145°С-1400°С</li>
+                        <li>Плотность — 2770 кг/м³ (мусковит), 2200 кг/м³ (флогопит), 3300 кг/м³ (биотит)</li>
+                        <li>Твёрдость слюды по минералогической шкале - 2,5-3</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_slydablack.png" alt="Слюда черная" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="pesok" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('pesok', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Песчаник - осадочная горная порода, распространенная в поверхностной части земной коры. Основной
+                    способ образования – разрушение и перенос горных пород водой с последующей цементацией отложений. По
+                    сути, это песок, сцементированный природным образом под давлением воды. В цветовой гамме преобладают
+                    светлые оттенки: желтый, бежевый, красный, янтарный.
+                    В составе песчаника чаще всего преобладает кварц. Сопутствующие минералы – полевые шпаты, слюда,
+                    глауконит.
+                    Песчаник широко применяется в строительстве в качестве стенового и облицовочного материала, бутового
+                    камня, щебня различного назначения. Кварцевый песчаник с содержанием кремнезёма SiO2 выше 95 %
+                    используется для производства динаса, в качестве флюса при выплавке меди и никеля, для изготовления
+                    стекла и другие.
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-SiO2( как у кварца, из-за его большого содержания)</li>
+                        <li>Температура плавления-1230 °C</li>
+                        <li>Плотность – 2250-2670 кг/м³</li>
+                        <li>Твердость по шкале Мооса- 4-5</li>
+                        <li>Предел прочности при сжатии- 10-140МПа</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_peschanik.png" alt="Песчаник" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="mel" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('mel', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Мел — разновидность известняка, осадочная горная порода органического (зоогенного) происхождения,
+                    состоящая из скрытокристаллического кальцита. Имеет белый цвет, мягкая и рассыпчатая, нерастворимая
+                    в воде. Основу химического состава мела составляет карбонат кальция с небольшим количеством
+                    карбоната магния, но обычно присутствует и некарбонатная часть, в основном оксиды металлов. Мел —
+                    необходимый компонент мелованной бумаги, используемой в полиграфии для печати качественных
+                    иллюстрированных изданий, так же используется в виде кормовой добавки, для письма на досках в школе.
+                    Молотый мел широко применяется в качестве дешёвого материала (пигмента) для побелки, окраски
+                    заборов, стен, бордюров, для защиты стволов деревьев от солнечных ожогов.
+
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-СаСО3</li>
+                        <li>Температура разложения-2442 ± 1 ℉ и 1517 ± 1 ℉</li>
+                        <li>Средняя плотность-2400кг/м³</li>
+                        <li>Твердость по шкале Мооса - <1</li>
+                        <li>Предел прочности при сжатии-10МПа</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_mel.png" alt="Мел" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="mramor" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('mramor', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Белый мрамор-это кристаллически-зернистый минерал, образующийся в процессе метаморфизма карбонатных пород (известняков или доломитов) под воздействием высоких давлений и температур. Чистая порода имеет белоснежный цвет и встречается достаточно редко. Это статуарный, мелкозернистый вид камня, который применяется в скульптурном искусстве. Даже небольшой процент примесей существенно влияет на окраску камня, причем оттенок может меняться в пределах одного месторождения или даже блока. Белый скульптурный мрамор - это однородная порода с мелкозернистой структурой и высокой пластичностью, благодаря чему камень этого типа легко поддается резке и шлифовке.
+
+
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-CaCO3</li>
+                        <li>Температура разложения-2442 ± 1 ℉ и 1517 ± 1 ℉</li>
+                        <li>Средняя плотность-2775кг/м³</li>
+                        <li>Твердость по шкале Мооса - 2.5-3</li>
+                        <li>Предел прочности при сжатии-100-300 МПа</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_mramor.png" alt="Мрамор" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="kamsol" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('kamsol', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Каменная соль — осадочный минерал, состоящий преимущественно из хлористого натрия. Состав примесей зависит от характеристик месторождений. 
+Каменную соль по преимуществу добывают из подземных залежей. Каменная соль имеет грязно-серый цвет. В залежах каждого конкретного месторождения содержатся различные примеси, поэтому стабильной и/или равномерной чистоты каменной соли добиться почти невозможно.
+Каменную соль используют в котельнях для химической очистки воды в теплосетях. Натрий хлористый используется в производстве моющих средств, мыловарении и др.
+
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-NaCl</li>
+                        <li>Температура плавления-801°C</li>
+                        <li>Плотность-2173 кг/м³</li>
+                        <li>Твердость по минералогической шкале 2</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_solKamennaya.png" alt="Каменная соль" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="torf" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('torf', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Торф — осадочная рыхлая горная порода, находящая применение как горючее полезное ископаемое. Торф образуется в процессе естественного отмирания и неполного распада болотных растений в условиях избыточного увлажнения и затруднённого доступа воздуха. Процесс торфонакопления не заканчивается, он происходит постоянно. Как правило, торф либо лежит на земной поверхности, либо очень близко прилегает к ней (до 10-20 метров вглубь). А это делает добычу полезного ископаемого довольно простой. Торф используется как твердое топливо, теплоизоляционный материал, удобрение для почвы а так же для получения торфяного газа.
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-Нет точной химической формулы, так как это разложившиеся растения.</li>
+                        <li>Плотность - 1400-1700 кг/м³</li>
+                        <li>Теплота сгорания — 24 МДж/кг</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_torf.png" alt="Торф" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="kamygol" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('kamygol', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Каменный уголь — твёрдое горючее полезное ископаемое, промежуточная по содержанию углерода форма угля между бурым углём и антрацитом, образуется вследствие длительного метаморфизма растительных остатков. Свойства материала различны. Они зависят от стадии метаморфизма (степени углефикации), строения породы, особенностей месторождения и других факторов. Все они в свою очередь влияют на качество и способы применения полезного ископаемого. Каменный уголь используется как бытовое, энергетическое топливо, сырье для металлургической и химической промышленности, а также для извлечения из него редких и рассеянных элементов. 
+
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-С2(сильно спрессованный углерод)</li>
+                        <li>Температура сгорания-1100 °C</li>
+                        <li>Плотность-1500 кг/м³</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_kamenYgol.png" alt="Каменный уголь" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="ygol" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('ygol', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Уголь — органическое вещество, которое образовалось под воздействием давления и температур из залежей торфа. Сначала торфяные останки трансформировались в бурый уголь, потом — в каменный, затем — в антрацит. Бурый уголь — самый твердый и самый влажный вид угля. Он содержит 30–40% влаги. Он быстро окисляется и растрескивается на открытом воздухе, при этом теряет свою теплотворную способность. Чтобы предотвратить этот процесс, на ТЭЦ тщательно укатывают угольные кучи на складах, перекрывая доступ воздуха к внутренним слоям угля. Бурый уголь используется как энергетическое и коммунально-бытовое топливо, для производства угольных брикетов, газообразного и жидкого топлива, углещелочных реагентов гуминовых кислот, воска, металлургического кокса, извлечения редких и рассеянных элементов. 
+Антрацит-самый древний из ископаемых углей, уголь наиболее высокой степени углефикации. Лучший сорт каменного угля, отличающийся чёрным цветом, сильным блеском, большой теплотворной способностью. Высшая разновидность угля — твёрдого горючего полезного ископаемого, образованного из растительных остатков в результате гумификации и углефикации. Уголь чёрно-серого цвета с металлическим блеском, твёрдый, высокой плотности и высокой электропроводности.
+
+
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Удельная теплота сгорания - 22-31 МДж/кг</li>
+                        <li>Формула-С2</li>
+                        <li>Плотность-1500кг/м³</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_byrblyYgol.png" alt="Бурый уголь" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="antracit" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('antracit', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Антрацит-самый древний из ископаемых углей, уголь наиболее высокой степени углефикации. Лучший сорт каменного угля, отличающийся чёрным цветом, сильным блеском, большой теплотворной способностью. Высшая разновидность угля — твёрдого горючего полезного ископаемого, образованного из растительных остатков в результате гумификации и углефикации. Уголь чёрно-серого цвета с металлическим блеском, твёрдый, высокой плотности и высокой электропроводности.
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-С2</li>
+                        <li>Удельная теплота сгорания - 22-31 МДж/кг</li>
+                        <li>Плотность-1500кг/м³</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_Antracit.png" alt="Антрацит" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="magnjeleznyk" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('magnjeleznyk', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Магнитный железняк-широко распространённый минерал чёрного цвета, является важной железной рудой, наряду с гематитом. Первый магнитный материал, известный человечеству. Магнетит легко узнается по постоянному железно-черному цвету, по черной черте и по магнитности.
+Из руды магнитного железняка выплавляют железо, которое идет на производство всех видов сплавов, главным образом, стали и чугуна. Также магнетит используют для получения фарфора, а особенно – в химической промышленности, благодаря тому, что железо легко вступает во многие реакции.
+Образуется магнетит в зоне контакта гранитных магм, магм сиенитового, диоритового состава с известняками.
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-Fe3O4</li>
+                        <li>Твердость по шкале Мооса- 5.5-6.5</li>
+                        <li>Температура плавления-1954°C</li>
+                        <li>Плотность-5,175 г/см³.</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_magnitJeleznyk.png" alt="Магнитный железняк" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="redjeleznyk" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('redjeleznyk', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Магнитный железняк-широко распространённый минерал чёрного цвета, является важной железной рудой, наряду с гематитом. Первый магнитный материал, известный человечеству. Магнетит легко узнается по постоянному железно-черному цвету, по черной черте и по магнитности.
+Из руды магнитного железняка выплавляют железо, которое идет на производство всех видов сплавов, главным образом, стали и чугуна. Также магнетит используют для получения фарфора, а особенно – в химической промышленности, благодаря тому, что железо легко вступает во многие реакции.
+Образуется магнетит в зоне контакта гранитных магм, магм сиенитового, диоритового состава с известняками.
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-Fe3O4</li>
+                        <li>Твердость по шкале Мооса- 5.5-6.5</li>
+                        <li>Температура плавления-1954°C</li>
+                        <li>Плотность-5,175 г/см³.</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_redJeleznyk.png" alt="Красный железняк" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="byrjeleznyk" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('byrjeleznyk', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Магнитный железняк-широко распространённый минерал чёрного цвета, является важной железной рудой, наряду с гематитом. Первый магнитный материал, известный человечеству. Магнетит легко узнается по постоянному железно-черному цвету, по черной черте и по магнитности.
+Из руды магнитного железняка выплавляют железо, которое идет на производство всех видов сплавов, главным образом, стали и чугуна. Также магнетит используют для получения фарфора, а особенно – в химической промышленности, благодаря тому, что железо легко вступает во многие реакции.
+Образуется магнетит в зоне контакта гранитных магм, магм сиенитового, диоритового состава с известняками.
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-Fe3O4</li>
+                        <li>Твердость по шкале Мооса- 5.5-6.5</li>
+                        <li>Температура плавления-1954°C</li>
+                        <li>Плотность-5,175 г/см³.</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_ByrbluJeleznyk.png" alt="Бурый железняк" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="kolhedan" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('antracit', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Халькопирит(устар. медный колчедан) — минерал, который добывается с древних времен. Он является одним из старейших медных образований на планете. Крупные кристаллы редки и имеют искажённый тетраэдрический облик. Грани, как правило, покрыты глубокой грубой штриховкой. Характерно двойникование, обычны двойники прорастания. Образует сплошные зернистые агрегаты, вкрапленность, прожилки в карбонатах и других сульфидах. Цвет золотисто-жёлтый, по оттенку в отличие от латунно-жёлтого пирита напоминающий червонное золото, из-за этого получивший название «золотая обманка». Месторождения халькопирита можно встретить практически на всех континентах. В чистом виде камень почти не встречается — в основном в составе с кварцевыми и хризолитовыми минералами. Халькопирит – основная руда для получения меди. Медь применяется в электротехнике, в машиностроении, для получения сплавов (бронза, латунь, томпак), для изготовления лабораторных принадлежностей, змеевиков, перегонных кубов, холодильников, труб.
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-CuFeS2</li>
+                        <li>Твердость по минералогической шкале- 3.5-4</li>
+                        <li>Плотность-4200кг/м³</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_MednbuyKolhedan.png" alt="Медный колчедан" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+        <div id="boksit" class="hideLoad">
+            <button id="remove-button" style="font-size: large" onclick="hide('boksit', 'mainblock')">
+                Вернуться
+            </button>
+            <div class="mineral-info">
+                <span style="display: block; text-indent: 25px">
+                    Боксит — горная порода, важнейший источник алюминия. Свое название материал получил в честь той местности, где был обнаружен и в 1821 году впервые описан геологом Пьером Бертье. Боксит — это алюминиевая руда в виде каменистой или глиноподобной породы, однородной или слоистой. Минерал сформировался в результате латеритного выветривания щелочных, кислых, иногда основных пород или осаждения в морских и озёрных бассейнах значительных количеств глинозема, содержащихся в переносимых молекулярных растворах и золях. Многообразием отличается цвет породы: от белого до темно-красного, хотя наиболее распространены бурый и кирпичный. Минерал боксит с незначительным содержанием железа применяется при изготовлении огнеупорных, быстротвердеющих цементов. Кроме алюминия из рудного сырья извлекают железо, титан, галлий, цирконий, хром, ниобий и TR (редкоземельные элементы). Бокситы используют для производства красок, абразивов, сорбентов.
+
+                </span>
+
+                <div style="display: flex; align-items: center">
+                    <div class="burger" onclick="burgerToggle(this)" style="display: flex; align-items: center">
+                        <span>Подробнее</span>
+                        <div style="display: flex; align-items: center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                class="open-info">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-target show">
+                    <ul>
+                        <li>Формула-Al2O3</li>
+                        <li>Твердость по шкале Мооса- 2-7</li>
+                        <li>Плотность изменяется от 1800 кг/м3 (рыхлые) до 3200 кг/м3 (каменистые)</li>
+                    </ul>
+                </div>
+                <div class="imgWrapper">
+                    <img src="images/icon_boksit.png" alt="Боксит" class="icons__mineral_block" />
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-------------------------------------------------->
+    <!--------------------- FOOTER --------------------->
+    <!-------------------------------------------------->
+    <footer>
+        <span>Разработчики: Школьники 1534</span>
+    </footer>
+
+    <!-------------------------------------------------->
+    <!--------------------- SCRIPTS -------------------->
+    <!-------------------------------------------------->
+    <script src="js/projectTask.js"></script>
+</body>
+
+</html>
